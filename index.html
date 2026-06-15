@@ -1,0 +1,65 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Tauri App</title>
+    <script type="module" src="/src/main.ts" defer></script>
+    <title>Time Calculator</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hours Calculator</h1>
+
+    <!-- First Time Section -->
+    <div class="time-section">
+        <label>First time</label>
+        <div class="input-group" id="first-time">
+            <input type="number" placeholder="MM" class="mm">
+            <input type="number" placeholder="dd" class="dd">
+            <input type="number" placeholder="hh" class="hh">
+            <input type="number" placeholder="mm" class="min">
+            <input type="number" placeholder="ss" class="ss">
+        </div>
+    </div>
+
+    <!-- Second Time Section -->
+    <div class="time-section">
+        <label>Second time</label>
+        <div class="input-group" id="second-time">
+            <input type="number" placeholder="MM" class="mm">
+            <input type="number" placeholder="dd" class="dd">
+            <input type="number" placeholder="hh" class="hh">
+            <input type="number" placeholder="mm" class="min">
+            <input type="number" placeholder="ss" class="ss">
+        </div>
+    </div>
+
+    <!-- Operation Buttons -->
+    <div class="controls">
+        <button id="add-btn" class="op-btn">+</button>
+        <button id="sub-btn" class="op-btn">-</button>
+    </div>
+
+    <!-- Answer Section -->
+    <div class="time-section">
+        <label>Answer</label>
+        <div class="input-group readonly" id="answer-time">
+            <input type="text" placeholder="MM" class="mm" readonly>
+            <input type="text" placeholder="dd" class="dd" readonly>
+            <input type="text" placeholder="hh" class="hh" readonly>
+            <input type="text" placeholder="mm" class="min" readonly>
+            <input type="text" placeholder="ss" class="ss" readonly>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
